@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Pendaftaran</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                }
+            .data-diri{
+                padding: 12px 24px;
+                background-color: rgb(255, 158, 195);
+                color: rgb(27, 1, 1); 
+            }
+            table{
+                padding: 8px 16px;
+                width: 80px;
+                margin: 0 auto;
+            }
+            th,
+            td{
+                padding: 4px 8px;
+            }  
+            input[type="text"] {
+                padding: 12px 24px;
+                width: 75%;
+                border-radius:4px;
+                border: none;
+                outline: 1px rgb(255, 158, 195)solid;
+                margin-bottom:8px;
+                
+            }  
+            td{
+                font-size: 16px;
+                font-weight: 600px;
+                color: #242424;
+            }
+            select{
+                width: 100%;
+                padding: 8px 24px;
+                border-radius: 8px;
+                margin-bottom: 4px;
+                border: 1px rgb(255, 158, 195)solid;
+            }
+
+            textarea{
+                resize: horizontal;
+                padding: 12px 24px;
+                border: none;
+                outline: 1px solid rgb(255, 158, 195);
+                background: #f1f5f9;
+            }
+
+            .image{
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+            }
+            input[type="radio"]{
+                appearance: none;
+                background-color: rgb(255, 158, 195);
+                padding: 4px;
+                border: 2px solid#420101;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+            }
+            .navbar{
+                background-color: rgb(255, 158, 195);
+                padding: 8px 16px;
+            }
+            .navbar nav{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 24px;
+            }
+            .navbar nav h1{
+                font-size: 32px;
+                color: #242424;
+                font-weight: 700;
+            }
+
+            .navbar nav ul{
+                display:flex;
+                gap:12px;
+            }
+            .navbar nav ul li{
+                padding: 4px 8px;
+                list-style:none;
+            }
+            .navbar nav ul li a{
+                display: block;
+                text-decoration: none;
+                padding: 12px 24px;
+                background-color: #242424;
+                color: #f1f5f9;
+                border: 1px solid #7c051f;
+                border-radius: 8px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar"> 
+            <nav>
+                <h1>Logo</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <h1 class="data-diri">Data Diri</h1>
+        <table>
+            <tr> 
+                <td>Nik:</td>
+                <td>Nama Lengkap:</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Tempat/Tanggal Lahir</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Jenis kelamin:</td>
+                <tr>
+                    <td><input type="radio">Laki-Laki</td>
+                    <td><input type="radio">Perempuan</td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                </tr>
+                <tr>
+                    <td><input type="radio">Menikah</td>
+                    <td><input type="radio">Belum Menikah</td>
+                </tr>
+            </tr>
+            <tr>
+                <td>Agama:</td>
+            </tr>
+            <tr>
+                <td><input type="Radio">Islam</td>
+                <td><input type="Radio">Protestan</td>
+                <td><input type="Radio">Katolik</td>
+                <td><input type="Radio">Hindu</td>
+                <td><input type="Radio">Budha</td>
+            </tr>
+            <tr>
+                <td>Alat Transportasi:</td>
+                <td>Jenis Tinggal:</td>
+            </tr>
+            <tr>
+                <td>
+                <select name=""id="">
+                    <option value="">Jalan Kaki</option>
+                    <option value="">Angkutan Umum</option>
+                    <option value="">Mobil</option>
+                </select>
+                </td>
+            <td>
+                <select name=""id="">
+                    <option value="">Bersama Orang Tua</option>
+                    <option value="">Wali</option>
+                    <option value="">Kost</option>
+                </select>
+                </td>
+                <tr>
+                    <td>Penerima KPS:</td>
+                    <td>Kewarganegaraan:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name=""id="">
+                            <option value="">Ya</option>
+                            <option value="">Tidak</option>
+                        </select>
+                        </td>
+                    <td>
+                        <select name=""id="">
+                            <option value="">WNI</option>
+                            <option value="">WNA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat Lengkap(Sesuai KTP):</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RT/RW</td>
+                    <td>Jalan</td>
+                </tr>
+                <tr>
+                    <td><input type="text"/><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Kode Pos:</td>
+                    <td>Kel/Desa:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Dusun:</td>
+                    <td>Kecamatan:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>NPWP:</td>
+                    <td>Telp/hp:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Asal Sekolah:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>NISN:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Jurusan:</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                </tr>
+                <tr>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"/>Teknik Informatika(S1)</td>
+                    <td><input type="radio"/>Sistem Informasi(S1)</td>
+                    <td><input type="radio"/>Manajemen Informatika(D3)</td>
+                    <td><input type="radio"/>Komputerisasi Akuntansi (D3)</td>
+                </tr>
+                <tr>
+                    <td>Waktu Belajar</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"/>Pagi</td>
+                    <td><input type="radio"/>Sore</td>
+                </tr>
+                <tr>
+                    <td>Pilihan Kelas:</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"/>Reguler</td>
+                    <td><input type="radio"/>Karyawan</td>
+                    <td><input type="radio"/>KIP Kuliah</td>
+                </tr>
+                <tr>
+                    <td>Sumber Mengenai STMIK Kaputama</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"/>brosur/spanduk/poster</td>
+                    <td><input type="radio"/>Media/Masa</td>
+                    <td><input type="radio"/>Teman/Saudara</td>
+                    <td><input type="radio"/>Sosmed</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"/><input type="text"/></td>
+                </tr>
+        </table>
+        <button>Simpan</button>
+        </body>
+        </html>
